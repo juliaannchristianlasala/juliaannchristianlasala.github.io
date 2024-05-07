@@ -1,0 +1,383 @@
+html {
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+    scroll-behavior: smooth;
+    background-color: #f7fcfd;
+}
+
+/* Navigation Bar */
+nav.navib {
+    background-color: #181e35;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 1000;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+nav.navib a {
+    margin-left: 12px;
+    color: #fef7f6fa; 
+}
+
+nav.navib ul li a {
+    font-size: 18px;
+    color: #fef7f6fa;
+    margin-right: 10px;
+}
+
+nav.navib ul li a:hover {
+    color: #fef7f6fa;
+    text-shadow: .5px .5px 2px#ffffff;
+    background-color: #f7fcfd00;
+}
+
+/* HOME PAGE */
+.home-landing{
+    padding-top: 40px
+}
+
+h1{
+    color: #181e35;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #b1b1b1;
+}
+
+/* h1 mobile responsive */
+@media (max-width: 710px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 391px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* parallax */
+.parallax img {
+    filter: brightness(0.7) saturate(1.2) ;
+}
+
+.parallax-container {
+    height: 56vh;
+}
+
+/* parallax mobile responsive */
+@media (max-width: 640px) {
+    .parallax-container {
+        height: 35vh;
+    }
+}
+
+p{
+    color: #181e35;
+    font-size: 17px;
+    text-align: center;
+}
+
+/* p mobile responsive */
+@media (max-width: 645px) {
+    p {
+        font-size: 12px;
+    }
+}
+
+/* PHOTO GALLERY PAGE */
+.gallery{
+    background-color:#ffe4e1a7;
+}
+
+h2{
+    color: #181e35;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* h2 mobile responsive */
+@media (max-width: 760px) {
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 645px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+h5{
+    color: #4C2606;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* h5 mobile responsive */
+@media (max-width: 645px) {
+    h5 {
+        font-size: 1rem;
+    }
+}
+
+/* carousel */
+.carousel-item img {
+    height: 34vh;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #ffc9ab;;
+    margin-top: 60px;
+}
+
+/* carousel mobile responsive */
+@media (max-width: 645px) {
+    .carousel-item img {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 391px) {
+    .carousel-item img {
+        margin-top: 37px;
+    }
+}
+
+
+/* SERVICES PAGE */
+.serv-container{
+    margin: 80px;
+}
+
+h3{
+    color: #181e35;
+    font-weight: bold;
+}
+
+/* h3 mobile responsive */
+@media (max-width: 645px) {
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+h6 {
+    font-weight: 600;
+    color: #4C2606;
+}
+
+.serv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.serv p{
+    font-size: 15.5px;
+}
+
+.text-container {
+    flex: 1;
+}
+
+/* container mobile responsive */
+@media (max-width: 611px) {
+    .serv-container {
+        margin: 120px;    
+    }
+}
+
+/* p mobile responsive */
+@media (max-width: 645px) {
+    p {
+        font-size: 12px;
+    }
+}
+
+/* text container mobile responsive */
+@media (max-width: 1347px) {
+    .serv  {
+        display:block;
+    }
+}
+
+/* service image */
+.serv img {
+    width: 50vh;
+    margin-top: -85px;
+    border-radius: 5px;
+}
+
+/* image mobile responsive */
+@media (max-width: 1347px) {
+    .serv img {
+        width: 60vh;
+        height: 20vh;
+        display: block;
+        margin: 20px auto;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1051px) {
+    .serv img {
+        width: 50vh;
+        height: 20vh;
+        display: block;
+        margin: 20px auto;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 716px) {
+    .serv img {
+        width: 40vh;
+        height: 20vh;
+        display: block;
+        margin: 20px auto;
+        object-fit: cover;
+    }
+}
+
+/* read more button */
+.readmore a {
+    background-color: #4C2606;
+    color:#ffffff;
+    border-radius: 4px;
+}
+
+
+.readmore a:hover {
+    background-color:  #FEF7F6;
+    color: #181e35;
+}
+
+#services {
+    padding-bottom: 20vh;
+}
+
+
+/* ABOUT US PAGE */
+#about-landing {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: #ffe4e1;
+}
+
+/* for images */
+#team {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+/* for image container */
+.image-container {
+    position: relative; 
+    width: 23%;
+    margin-right: .2%; 
+}
+
+/* Style for the images */
+.image-container img {
+    width: 100%;
+    border-radius: 20px;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Style for the overlay text */
+.overlay-text {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%); 
+    color: #181e35; 
+    padding: 5px 10px; 
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Display text on hover */
+.image-container:hover .overlay-text {
+    opacity: 1;
+    text-align: center;
+    text-shadow: 1px 1px 1px #181e35;
+    
+}
+
+/* hover effects */
+.image-container:hover img {
+    transform: scale(1.05);
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.4;
+}
+
+/* floating button */
+#floating a {
+    background-color: #4C2606;
+    box-shadow: 1px 1px 4px#181e35;
+}
+
+#floating ul li a {
+    background-color: #4C2606;
+}
+
+#floating ul li a:hover {
+    background-color: #181E35;
+}
+
+
+/* FOOTER */
+.page-footer {
+    background-color:#181e35;
+}
+
+#bottom-footer{
+    background-color: #ffffff0d;
+}
+
+/* footer responsiveness */
+@media (max-width: 415px) {
+    #bottom-footer {
+        font-size: 10px;
+    }
+}
+
+/* footer icon */
+footer li {
+    display: flex; 
+    align-items: center; 
+    margin: 10px 0;
+}
+
+footer li i {
+    font-size: 24px;
+    color: #4C2606;
+    border-radius: 50%;
+    padding: 6px;
+    background-color: #f0f0f0;
+    align-items: center;
+}
+
+footer li i:hover {
+    color: white;
+    background-color: #4C2606;
+    align-items: center;
+}
+
+footer li a {
+    margin-left: 10px;
+    transition: color 0.3s;
+    align-items: center;
+}
+
+footer li a:hover {
+    color: #181e35; 
+    align-items: center;
+}
